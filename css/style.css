@@ -115,6 +115,22 @@ li {
   flex-direction: column;
   justify-content: end;
 }
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+.hero-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 329px;
+  height: 208px;
+  background-image: url("../img/BMW_328.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .hero-image-text {
   display: flex;
   flex-direction: column;
@@ -124,13 +140,13 @@ li {
   text-align: right;
   font-weight: normal;
   font-size: 25px;
-  margin-bottom: 27px;
+  margin-bottom: 4px;
 }
 .hero-image-title {
   color: #256CFF;
   text-align: right;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 54px;
 }
 .hero-image-translate {
   position: relative;
@@ -150,4 +166,9 @@ li {
   max-width: 700px;
   position: relative;
   z-index: 1;
+}
+
+.footer-author {
+  position: fixed;
+  bottom: 19px;
 }/*# sourceMappingURL=style.css.map */
