@@ -171,4 +171,24 @@ li {
 .footer-author {
   position: fixed;
   bottom: 19px;
+}
+.footer-author-designer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 153.4%;
+  display: flex;
+  align-items: center;
+  color: #0066B1;
+}
+.footer-author-normal {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 153.4%;
+  display: flex;
+  align-items: center;
+  color: #0066B1;
 }/*# sourceMappingURL=style.css.map */
