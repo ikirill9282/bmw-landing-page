@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  z-index: 1;
 }
 
 .container {
@@ -25,8 +26,8 @@ li {
   display: flex;
   justify-content: space-between;
   margin: 11px;
-  margin-bottom: 8%;
-  margin-top: 60px;
+  margin-bottom: 6%;
+  margin-top: 50px;
 }
 .header-logo {
   display: flex;
@@ -194,6 +195,10 @@ li {
   color: #0066B1;
 }
 
+.header-burger-wrapper {
+  height: 50px;
+  width: 50px;
+}
 .header-burger-menu {
   background-color: #2172f9;
   width: 34px;
@@ -219,10 +224,11 @@ li {
   background-color: #E5E5E5;
   width: 50px;
   height: 50px;
-  position: relative;
-  top: -20px;
-  right: -200px;
+  position: absolute;
+  top: 23px;
+  right: 35px;
   border-radius: 50%;
+  z-index: 30 !important;
 }
 .header-burger-active::after, .header-burger-active::before {
   content: "";
@@ -239,4 +245,88 @@ li {
 .header-burger-active::after {
   position: absolute;
   transform: rotate(45deg);
+}
+
+.menu-block {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #EFEFEF;
+  height: 100vh;
+  width: 25vw;
+  z-index: 20 !important;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+  color: #0066B1;
+  padding-left: 31px;
+  padding-top: 114px;
+}
+
+.list-menu {
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+.list-menu:nth-child(4) {
+  justify-content: center;
+  flex-basis: 35%;
+}
+.list-menu-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.list-menu__input {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #0066B1;
+  color: inherit;
+  transition: 0.2s;
+  margin-bottom: 28px;
+  padding-bottom: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: rgba(0, 102, 177, 0.5);
+}
+.list-menu__input:hover {
+  border-color: #0066B1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.list-menu__input:focus {
+  outline: none;
+  border: 2px solid #0066B1;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.2s;
+}
+.list-menu__btn {
+  background: #0066B1;
+  border-radius: 28px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 11px 11px;
+}
+
+.item-menu {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */
